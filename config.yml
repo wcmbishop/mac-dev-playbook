@@ -20,6 +20,7 @@ homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - autoconf
   - bash-completion
+  - cowsay
   - chromedriver
   - doxygen
   - gettext
@@ -34,11 +35,12 @@ homebrew_installed_packages:
   - sqlite
   - mcrypt
   - mas
+  - nano
   - nmap
   - node
   - nvm
   - ssh-copy-id
-  - cowsay
+  - r
   - readline
   - openssl
   - pv
@@ -52,31 +54,43 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - adobe-photoshop-lightroom
+  - backblaze
+  - bbedit
   - docker
-  - dropbox
-  # - fing # Download link keeps getting changed, d'oh!
-  - firefox
+  - dropbox 
+  - fantastical
+  #- fish
   - google-chrome
   - handbrake
+  - iterm2
   - licecap
-  - limechat
+  - macdown
   - macvim
+  - rstudio
   - sequel-pro
   - skitch
   - slack
+  - sourcetree
   - sublime-text
-  #  - transmit
-  #  - vagrant
-  #  - virtualbox
-  - iterm2
-  - macdown
+  - textexpander
+
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: 
-  - { id: 441258766, name: "Magnet" }
-  - { id: 867299399, name: "OmniFocus 2" }
-  - { id: 1179623856, name: "Pastebot" }
-  - { id: 497799835, name: "Xcode" }
+  - { id: 918858936, name: "Airmail 3"}
+  - { id: 961632517, name: "Be Focused Pro"}
+  - { id: 1091189122, name: "Bear"}
+  - { id: 409222199, name: "Cyberduck"}
+  - { id: 975937182, name: "Fantastical 2"}
+  - { id: 1189824719, name: "Jayson"}
+  - { id: 441258766, name: "Magnet"}
+  - { id: 920404675, name: "Monodraw"}
+  - { id: 867299399, name: "OmniFocus 2"}
+  - { id: 1142578772, name: "OmniOutliner"}
+  - { id: 1179623856, name: "Pastebot"}
+  - { id: 1153157709, name: "Speedtest"}
+  - { id: 497799835, name: "Xcode"}
 mas_email: ""
 mas_password: ""
 
@@ -100,7 +114,12 @@ npm_packages: []
 pip_packages: []
   # - name: mkdocs
   #   state: present # present/absent/latest, default: present
-  #   version: "0.16.3" # default: N/A
+  # - name: h5py
+  #   state: present
+  # - name: keras
+  #   state: present
+  # - name: tensorflow
+  #   state: present
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []
