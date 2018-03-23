@@ -23,6 +23,8 @@ homebrew_installed_packages:
   - cowsay
   - chromedriver
   - doxygen
+  - dockutil
+  - fish
   - gettext
   - gifsicle
   - git
@@ -58,10 +60,10 @@ homebrew_cask_apps:
   - adobe-photoshop-lightroom
   - backblaze
   - bbedit
+  - basictex
   - docker
   - dropbox 
   - fantastical
-  #- fish
   - google-chrome
   - handbrake
   - iterm2
@@ -70,6 +72,7 @@ homebrew_cask_apps:
   - macvim
   - rstudio
   - sequel-pro
+  - sketchup
   - skitch
   - slack
   - sourcetree
@@ -123,11 +126,7 @@ pip_packages:
   # - name: tensorflow
   #   state: present
 
-# Glob pattern to ansible task files to run after all other tasks are finished.
-post_provision_tasks: []
-
-# dockitems_remove_all: true
-
+dockitems_remove_all: true
 dockitems_enabled:
   - name: Terminal
     path: "/Applications/Utilities/Terminal.app"
@@ -135,3 +134,11 @@ dockitems_enabled:
   - name: Safari
     path: "/Applications/Safari.app"
     pos: 2
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: []
+
+
+####### Things I've installed manually
+# - http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+
