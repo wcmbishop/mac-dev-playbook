@@ -61,6 +61,7 @@ homebrew_cask_apps:
   - backblaze
   - bbedit
   - basictex
+  - capture-one
   - docker
   - dropbox 
   - fantastical
@@ -139,6 +140,9 @@ dockitems_enabled:
 post_provision_tasks: []
 
 
-####### Things I've installed manually
-# - http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+## Things I've installed manually ===========================
+# * Latex Live - http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+# * FUJIFILM X RAW STUDIO - http://www.fujifilm.com/support/digital_cameras/software/x_raw_studio/mac/
+# * Fujifilm ICC profiles for Capture One - https://blog.thomasfitzgeraldphotography.com/blog/2017/2/how-to-download-and-install-fuji-colour-profiles-for-capture-one
+
 
