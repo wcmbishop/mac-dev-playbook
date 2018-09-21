@@ -71,6 +71,7 @@ homebrew_cask_apps:
   - licecap
   - macdown
   - macvim
+  - pycharm-ce
   - rstudio
   - sequel-pro
   - sketchup
@@ -95,8 +96,10 @@ mas_installed_apps:
   - { id: 1142578772, name: "OmniOutliner"}
   - { id: 1179623856, name: "Pastebot"}
   - { id: 1153157709, name: "Speedtest"}
+  - { id: 985614903, name: "SQLPro Studio"}
+  - { id: 534067900, name: "Stock + Pro"}
   - { id: 497799835, name: "Xcode"}
-mas_email: ""
+mas_email: "benjoaquin@mac.com"
 mas_password: ""
 
 osx_script: "~/.osx --no-restart"
@@ -144,5 +147,5 @@ post_provision_tasks: []
 # * Latex Live - http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 # * FUJIFILM X RAW STUDIO - http://www.fujifilm.com/support/digital_cameras/software/x_raw_studio/mac/
 # * Fujifilm ICC profiles for Capture One - https://blog.thomasfitzgeraldphotography.com/blog/2017/2/how-to-download-and-install-fuji-colour-profiles-for-capture-one
-
+# * Additional Tools for Xcode - https://download.developer.apple.com/Developer_Tools/Additional_Tools_for_Xcode_10_Beta/Additional_Tools_for_Xcode_10_Beta.dmg
 
