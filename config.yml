@@ -21,7 +21,6 @@ homebrew_installed_packages:
   - autoconf
   - bash-completion
   - cowsay
-  - chromedriver
   - doxygen
   - dockutil
   - fish
@@ -49,23 +48,24 @@ homebrew_installed_packages:
   - ssh-copy-id
   - wget
   - wrk
+  - zsh
 
 homebrew_taps:
   - homebrew/core
-  - caskroom/cask
-  - homebrew/php
+  - homebrew/cask
+
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - adobe-photoshop-lightroom
   - backblaze
   - bbedit
   - basictex
   - capture-one
+  - chromedriver
   - docker
   - dropbox 
   - fantastical
-  - google-chrome
+#  - google-chrome
   - handbrake
   - iterm2
   - licecap
@@ -76,7 +76,7 @@ homebrew_cask_apps:
   - sequel-pro
   - sketchup
   - skitch
-  - slack
+#  - slack
   - sourcetree
   - sublime-text
   - textexpander

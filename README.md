@@ -16,7 +16,7 @@ This is a work in progress, and is mostly a means for me to document my current 
 ## Installation
 
   1. Ensure Apple's command line tools are installed (`xcode-select --install` to launch the installer).
-  2. [Install Ansible](http://docs.ansible.com/intro_installation.html). _On macOS 10.13 try:_
+  * Install Homebrew and git.  _On macOS 10.13 try:_
 
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -28,9 +28,11 @@ sudo mkdir /usr/local/Frameworks
 sudo chown -R $(whoami) $(brew --prefix)/*
 brew install git
 ```
-  3. Clone this repository to your local drive.
-  4. Run `$ ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles.
-  5. Run `ansible-playbook main.yml -i inventory -K` inside this directory. Enter your account password when prompted.
+  * [Install Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#latest-releases-via-pip).
+  * Clone this repository to your local drive.
+  * Accept the Xcode license agreement by running `sudo xcodebuild -license accept`
+  * Run `$ ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles.
+  * Run `ansible-playbook main.yml -i inventory -K` inside this directory. Enter your account password when prompted.
 
 > Note: If some Homebrew commands fail, you might need to agree to Xcode's license or fix some other Brew issue. Run `brew doctor` to see if this is the case.
 
