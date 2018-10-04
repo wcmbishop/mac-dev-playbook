@@ -33,6 +33,7 @@ homebrew_installed_packages:
   - httpie
   - iperf
   - libevent
+  - libgit2
   - openssl
   - pv
   - mcrypt
@@ -71,6 +72,7 @@ homebrew_cask_apps:
   - iterm2
   - licecap
   - logitech-unifying
+  - logitech-control-center
   - macdown
   - macvim
   - pycharm-ce
