@@ -59,6 +59,7 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - anaconda # might need to run `export PATH=/usr/local/anaconda3/bin:"$PATH"` to make it work
   - backblaze
   - bbedit
   - basictex
@@ -84,6 +85,7 @@ homebrew_cask_apps:
   - sourcetree
   - sublime-text
   - textexpander
+  - vlc
 
 
 # See `geerlingguy.mas` role documentation for usage instructions.
@@ -123,16 +125,16 @@ npm_packages: []
   # - name: webpack
   #   state: present # present/absent/latest, default: present
   #   version: "^2.6" # default: N/A
-pip_packages:
-  # - name: mkdocs
-  #   state: present # present/absent/latest, default: present
-  #   version: "0.16.3" # default: N/A
-  # - name: h5py
-  #   state: present
-  # - name: keras
-  #   state: present
-  # - name: tensorflow
-  #   state: present
+pip_packages: 
+  - name: mkdocs
+    state: present # present/absent/latest, default: present
+    version: "0.16.3" # default: N/A
+  - name: h5py
+    state: present
+  - name: keras  # `--upgrade --ignore-installed six` helps with `distutils installed project` error
+    state: present
+  - name: tensorflow
+    state: present
 
 dockitems_remove_all: true
 dockitems_enabled:
