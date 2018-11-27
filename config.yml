@@ -47,6 +47,7 @@ homebrew_installed_packages:
   - readline
   - sqlite
   - ssh-copy-id
+  - unixodbc # helps with the R package `odbc`
   - wget
   - wrk
   - zsh
