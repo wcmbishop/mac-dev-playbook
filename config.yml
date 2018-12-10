@@ -47,6 +47,7 @@ homebrew_installed_packages:
   - readline
   - sqlite
   - ssh-copy-id
+  - tmux
   - unixodbc # helps with the R package `odbc`
   - wget
   - wrk
@@ -72,6 +73,7 @@ homebrew_cask_apps:
 #  - google-chrome
   - handbrake
   - iterm2
+  - java8
   - licecap
   - logitech-unifying
   - logitech-control-center
